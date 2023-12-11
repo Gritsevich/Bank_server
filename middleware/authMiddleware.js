@@ -22,6 +22,7 @@ module.exports = async function(req, res, next)
     next()
   } catch(e)
   {
+    next()
     // res.status(401).json({message: "Не авторизован"}) 
   }
 };
